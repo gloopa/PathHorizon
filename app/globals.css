@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .safety-heatmap {
+    @apply opacity-60;
+  }
+  
+  .safety-safe {
+    @apply bg-safety-safe;
+  }
+  
+  .safety-moderate {
+    @apply bg-safety-moderate;
+  }
+  
+  .safety-risky {
+    @apply bg-safety-risky;
+  }
+}
